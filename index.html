@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Contact Me</title>
+        <link rel="stylesheet" href="asset/css/style.css">
+    </head>
+    <body>
+    <!--NAVBAR START-->
+        <nav>
+            <div class="left-side">
+                <a href="index (2).html"><img src="asset/img/logo.png" alt="Dumbways logo">
+                </a>
+                
+                <ol>
+                    <li>
+                    <a href="asset/index.html">Home</a>
+                    </li>
+                    <li>
+                    <a href="#">Blog</a>
+                    </li>
+    
+                </ol>
+            </div>
+            <div class="right-side">
+                <a href="index.html">Contact me</a>
+
+            </div>
+            
+        </nav>
+    <!--NAVBAR END-->
+
+    <!--FORM CONTACT START-->
+    <div class="form-contact">
+        <div class="container-form">
+        <form>
+            <div>
+                <label for="name">Nama</label>
+                <input id="name" type="text" pattern="[A-Za-z]"> <!-- required dibutuhkan agar tidak terjadi kekosongan kolom ketika di submit dan property selected harus dikosongkan-->
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="youremail@gmai.com"> <!--placeholder digunakan sebagai text petunjuk dalam pengisian-->
+            </div>
+            <div>
+                <label for="Phone">Phone number</label>
+                <input id="Phone" type="text" pattern="[0-9]"> <!--Pattern digunakan sebagai batasan yang diisi pada kolom baik itu alphabetic ataupun numeric-->
+            </div>
+            <div>
+                <label for="subject">Subject</label>
+                <select id="subject">
+                    <option hidden></option> <!--property hidden digunakan ketika mengosongkan tampilan awal pada option-->
+                    <option>Let`s Talk</option>
+                    <option>Let`s Collaboration</option>
+                    <option selected>Iam Hiring</option> <!--Property selected digunakan untuk menampilkan tampilan awal (meskipun bukan urutan yang pertama) pada option-->
+                </select>
+            </div>
+            <div>
+                <label for="message">Your message</label>
+                <textarea id="message"></textarea> <!--style none digunakan agar kolom input text area tidak bisa dirubah menggunakan panah-->
+            </div>
+        
+            <button type="submit">Submit</button>
+        </form>
+        </div>
+    </div>
+<!--FORM CONTACT END-->
+    </body>
+</html>
